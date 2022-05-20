@@ -1,0 +1,10 @@
+
+def getTrailingZeroes(n):
+    factorial = 1
+    zeroes = 0
+    for i in range(1, n + 1):
+        factorial *= i
+    while factorial % 10 == 0:
+        factorial //= 10
+        zeroes += 1
+    return zeroes
